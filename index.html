@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <style>
+    @font-face {
+      font-family: Hanken Grotesk;
+      src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: Hanken Grotesk;
+    }
+
+    h2, h3, p, ul, span {
+      margin: 0;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    section:first-child {
+      background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      color: hsl(0, 0%, 100%);
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 50px;
+    }
+
+    section:last-child {
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    section > div {
+      background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      text-align: center;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      padding: 20px;
+    }
+
+    div > p {
+      font-weight: bold;
+    }
+
+    div > p:first-child {
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    li {
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    li > span:first-child {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #reaction-li {
+      background-color: hsla(0, 100%, 67%, 0.08);
+    }
+
+    #reaction-li > span:first-child {
+      color: hsl(0, 100%, 67%);
+    }
+
+    #memory-li {
+      background-color: hsla(39, 100%, 56%, 0.08);
+    }
+
+    #memory-li > span:first-child {
+      color: hsl(39, 100%, 56%);
+    }
+
+    #verbal-li {
+      background-color: hsla(166, 100%, 37%, 0.08);
+    }
+
+    #verbal-li > span:first-child {
+      color: hsl(166, 100%, 37%);
+    }
+
+    #visual-li {
+      background-color: hsla(234, 85%, 45%, 0.08);
+    }
+
+    #visual-li > span:first-child {
+      color: hsl(234, 85%, 45%);
+    }
+
+    button {
+      border: none;
+      border-radius: 30px;
+      background-color: hsl(224, 30%, 27%);
+      color: hsl(0, 0%, 100%);
+      font-size: 15px;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      cursor: pointer;
+      background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <h2>Your Result</h2>
+      <div>
+        <p>76</p>
+        <p>of 100</p>
+      </div>
+      <h3>Great</h3>
+      <p>You scored higher than 65% of the people who have taken these testes.</p>
+    </section>
+    <section>
+      <h2>Summary</h2>
+      <ul>
+        <li id="reaction-li">
+          <span>
+            <img src="./assets/images/icon-reaction.svg" alt="">
+            Reaction
+          </span>
+          <span>80 / 100</span>
+        </li>
+        <li id="memory-li">
+          <span>
+          <img src="./assets/images/icon-memory.svg" alt="">
+            Memory
+          </span>
+          <span>92 / 100</span>
+        </li>
+        <li id="verbal-li">
+          <span>
+          <img src="./assets/images/icon-verbal.svg" alt="">
+            Verbal
+          </span>
+          <span>61 / 100</span>
+        </li>
+        <li id="visual-li">
+          <span>
+          <img src="./assets/images/icon-visual.svg" alt="">
+            Visual
+          </span>
+          <span>72 / 100</span>
+        </li>
+      </ul>
+      <button type="button">Continue</button>
+    </section>
+  </main>
+</body>
+</html>
