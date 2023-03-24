@@ -40,7 +40,7 @@ This is my solution to the [Results summary component challenge on Frontend Ment
 
 ### What I learned
 
-I've made this project mostly to practice CSS.
+I'm still struggling with mobile-first design, but I think I've made some progress in that area. Also, I think the way I code in general is getting better because of these challenges.
 
 ### Continued development
 
